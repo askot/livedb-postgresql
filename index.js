@@ -18,8 +18,8 @@ pg.on("end", function onPgEnd() {
  */
 function LivePg(conn, poolSize) {
   this.conn     = conn;
-  this.docTable = "doc.documents";
-  this.opTable  = "doc.operations";
+  this.docTable = "data.documents";
+  this.opTable  = "data.operations";
 
   pg.defaults.poolSize = poolSize || 10;
 }
